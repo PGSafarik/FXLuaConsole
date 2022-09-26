@@ -351,7 +351,9 @@ void FXTestLua::msgBox_init( )
 
 void FXTestLua::readConfig( )
 {
+  
   FXApp *a = getApp( );
+  FXString icons_map;  
 
   /* Read the registry settings */
   m_opendir  = a->reg( ).readStringEntry( "Core", "workdir",      FXSystem::getHomeDirectory( ).text( ) );
@@ -364,6 +366,7 @@ void FXTestLua::readConfig( )
   m_out_fg     = a->reg( ).readColorEntry(  "Theme", "out.fg",   a->getForeColor( ) );
   m_out_font   = a->reg( ).readStringEntry( "Theme", "out.font", FXString::null );
   m_icons_name = a->reg( ).readStringEntry( "Theme", "icons",    "Oxygen" );
+  icons_map   = a->reg( ).readStringEntry( "Theme", "imap",    "/opt/FXLuaConsole/data/icons.map" );
 
   /* Parsing the cmd arguments */
   FXint num = a->getArgc( );
@@ -378,11 +381,8 @@ void FXTestLua::readConfig( )
   }
 
   if( !m_icons_name.empty( ) ) { 
-    FXString i_d_pth = "/home/gabriel/Projects/Fox/FXLua/Test01/data/";  
-    //m_icons_th->load( i_d_pth + m_icons_name + ".cfg" ); 
-    m_icons_th->load( "/home/gabriel/Projects/Fox/FXLua/Test01/data/icons.map", m_icons_name );
+    m_icons_th->load( icons_map , m_icons_name );
   } 
-  //FXString iconPath = "/usr/share/icons/oxygen/";
 }
 
 void FXTestLua::writeConfig( )

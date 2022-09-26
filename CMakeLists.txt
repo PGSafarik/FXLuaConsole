@@ -28,7 +28,7 @@ TARGET_INCLUDE_DIRECTORIES( ${PROJECT_NAME} PUBLIC "${PROJECT_BINARY_DIR}" )
 
 # Install build project
 INSTALL( TARGETS ${PROJECT_NAME} RUNTIME DESTINATION . )
-#INSTALL( DIRECTORY data DESTINATION /usr/share/games/morfeus )		# Globalni data
+INSTALL( DIRECTORY data DESTINATION ${CMAKE_INSTALL_PREFIX} )		# Globalni data
 #INSTALL( FILES integration/medusa-head.png DESTINATION /usr/share/pixmaps/ )
 #INSTALL( FILES integration/Gorgona.desktop DESTINATION /usr/share/applications/ )
 
