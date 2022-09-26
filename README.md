@@ -1,5 +1,5 @@
 # FXLuaConsole - Simple, GUI lua launcher
--DD.MM.202Y-
+-27.09.2022-
 
 *Content:*
   1. [General info](#1-general-info)
