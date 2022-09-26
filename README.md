@@ -9,7 +9,7 @@
   5. [Author and project licencion](#5-Author-and-project-licencion)
   6. [Internet](#6-internet)
   
-<p align="center"><img src="docs/images/screenshot.png?raw=true" width="70%" />  
+<p align="center"><img src="doc/images/screenshot.png?raw=true" width="70%" />  
 
 ## 1. GENERAL INFO:
 This simple utility, a small experiment, serves to run a Lua script in a C++ GUI program, with scrollable output similar to a terminal. FXLuaConsole provides several custom commands that can be used in scripts.
