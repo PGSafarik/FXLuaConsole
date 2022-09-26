@@ -1,0 +1,3 @@
+#define FXLuaConsole_VERSION_MAJOR @FXLuaConsole_VERSION_MAJOR@
+#define FXLuaConsole_VERSION_MINOR @FXLuaConsole_VERSION_MINOR@
+
