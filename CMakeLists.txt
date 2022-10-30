@@ -4,7 +4,7 @@ PROJECT( FXLuaConsole VERSION 0.1 DESCRIPTION "The GUI for games and an launcher
 # The project settings
 SET( CMAKE_INSTALL_PREFIX "/opt/${PROJECT_NAME}" )  # Install target directory
 SET( LIB_FOX   "/opt/foxlib/1.7/64" )       # Fox toolkit path
-SET( LIB_FXGHI "/opt/foxghi/0.2/1"  )       # Fox GHI path
+SET( LIB_FXGHI "/opt/foxghi/0.3/1"  )       # Fox GHI path
 SET( CMAKE_CXX_STANDARD 98 )                # C++ Standard
 SET( CMAKE_CXX_STANDARD_REQUIRED True )     # C++ Standard
 #add_compile_options(-Wall -Wextra -pedantic -Werror)
